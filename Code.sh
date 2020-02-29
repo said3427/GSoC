@@ -1,7 +1,7 @@
 # Installation
 ## Install requirements using conda
-conda install -c bioconda stringtie==2.1.1
-conda install -c bioconda bioconductor-ballgown
+conda install -y -c bioconda stringtie==2.1.1
+conda install -y -c bioconda bioconductor-ballgown
 
 ## tablemaker is provided as binary (Previously downloaded)
 ## ./tablemaker-2.1.1.Linux_x86_64/tablemaker
