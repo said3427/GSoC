@@ -1,0 +1,8 @@
+library(ballgown)
+bgLiver = ballgown(samples="liver")
+bgBrain = ballgown(samples="brain")
+LiverTranscripts <- texpr(bgLiver)
+BrainTranscripts <- texpr(bgBrain)
+write.csv(head(LiverTranscripts,1000),file="LiverTranscripts.csv")
+write.csv(head(BrainTranscripts,1000),file="BrainTranscripts.csv")
+save(bgLiver,bgBrain, file='DataBallgown.rda')
