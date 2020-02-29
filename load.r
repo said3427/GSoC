@@ -13,8 +13,8 @@ LiverTranscripts <- texpr(bgLiver)
 BrainTranscripts <- texpr(bgBrain)
 
 ## Writing the first 1000 lines in CSV
-write.csv(head(LiverTranscripts,1000),file="LiverTranscripts.csv")
-write.csv(head(BrainTranscripts,1000),file="BrainTranscripts.csv")
+write.csv(head(LiverTranscripts,1000),file="results/LiverTranscripts.csv")
+write.csv(head(BrainTranscripts,1000),file="results/BrainTranscripts.csv")
 
 ## Finally, saving the Rdata object
-save(bgLiver,bgBrain, file='DataBallgown.rda')
+save(bgLiver,bgBrain, file='results/DataBallgown.rda')
